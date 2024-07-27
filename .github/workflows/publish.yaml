@@ -14,7 +14,23 @@ jobs:
           registry: ${{ secrets.CONTAINER_REGISTRY_ENDPOINT }}
 
       - name: Build the Docker Image
-        run: docker build . -t ${{ secrets.CONTAINER_REGISTRY_ENDPOINT }}/hobby-log:${{ github.sha }}
+        run: |
+          DOCKER_TAG="${{ secrets.CONTAINER_REGISTRY_ENDPOINT }}/hobby-log:${{ github.sha }}"
+          docker build . -t $DOCKER_TAG
+          echo "DOCKER_TAG=${DOCKER_TAG}" >> $GITHUB_ENV
 
       - name: Push the Docker Image
-        run: docker push ${{ secrets.CONTAINER_REGISTRY_ENDPOINT }}/hobby-log:${{ github.sha }}
+        run: docker push $DOCKER_TAG
+
+      - uses: actions/checkout@v4
+        with:
+          repository: khoutz182/argocd-gitops
+          path: argocd-gitops
+          token: ${{ secrets.GH_ARGO_GITOPS_PRIVATE_KEY }}
+
+      - run: |
+          cd argocd-gitops
+          kubectl patch --local -f apps/user-apps/hobby-log/deploy.yaml -p '{"spec":{"template":{"spec":{"containers":[{"name":"hobby-log","image":"${{ env.DOCKER_TAG }}"}]}}}}' -o yaml >! new_deploy.yaml
+          mv new_deploy.yaml apps/user-apps/hobby-log/deploy.yaml
+          git add apps/user-apps/hobby-log/deploy.yaml -m "Update hobby log to ${{ env.DOCKER_TAG }}"
+          git push
