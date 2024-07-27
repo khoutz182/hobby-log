@@ -26,7 +26,7 @@ jobs:
         with:
           repository: khoutz182/argocd-gitops
           path: argocd-gitops
-          token: ${{ secrets.GH_ARGO_GITOPS_PRIVATE_KEY }}
+          ssh-key: ${{ secrets.GH_ARGO_GITOPS_PRIVATE_KEY }}
 
       - run: |
           cd argocd-gitops
