@@ -56,4 +56,5 @@ jobs:
           mv new_deploy.yaml apps/user-apps/hobby-log/deploy.yaml
           git add apps/user-apps/hobby-log/deploy.yaml
           git commit -m "Update hobby log to ${{ env.DOCKER_TAG }}"
+          echo "weeeeeeee"
           git push
