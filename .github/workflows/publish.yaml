@@ -22,11 +22,18 @@ jobs:
       - name: Push the Docker Image
         run: docker push $DOCKER_TAG
 
+      - name: Do some token shenanigans
+        id: githubAppAuth
+        run: |
+         TOKEN="$(npx obtain-github-app-installation-access-token ci ${{ secrets.GH_APP_CREDENTIALS_TOKEN }})"
+         echo "::add-mask::$TOKEN"
+         echo "::set-output name=token::$TOKEN"
+
       - uses: actions/checkout@v4
         with:
           repository: khoutz182/argocd-gitops
           path: argocd-gitops
-          token: ${{ secrets.GH_ARGO_APP_CLIENT_SECRET }}
+          token: ${{ steps.githubAppAuth.outputs.token }}
 
       - run: |
           cd argocd-gitops
