@@ -44,7 +44,8 @@ jobs:
         with:
           repository: khoutz182/argocd-gitops
           path: argocd-gitops
-          token: ${{ steps.githubAppAuth.outputs.token }}
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: false
 
           # TODO: https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow
       - run: |
