@@ -28,6 +28,7 @@ jobs:
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.GH_ARGO_GITOPS_PRIVATE_KEY }}
+          repositories: "argocd-gitops"
 
       - uses: actions/checkout@v4
         with:
