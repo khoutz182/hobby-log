@@ -38,7 +38,6 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           persist-credentials: false
 
-        # https://github.com/actions/create-github-app-token?tab=readme-ov-file#configure-git-cli-for-an-apps-bot-user
       - name: Get GitHub App User ID
         id: get-user-id
         run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
@@ -56,5 +55,5 @@ jobs:
           mv new_deploy.yaml apps/user-apps/hobby-log/deploy.yaml
           git add apps/user-apps/hobby-log/deploy.yaml
           git commit -m "Update hobby log to ${{ env.DOCKER_TAG }}"
-          echo "weeeeeeee"
+          git remote -v
           git push
