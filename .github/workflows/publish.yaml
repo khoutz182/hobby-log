@@ -51,7 +51,7 @@ jobs:
           # TODO: https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow
       - run: |
           cd argocd-gitops
-          git remote set-url origin https://${{ steps.app-token.outputs.token }}@github.com/khoutz182/argocd-gitops
+          git remote set-url origin https://${{ steps.app-token.outputs.token }}@github.com/khoutz182/argocd-gitops.git
           kubectl patch --local -f apps/user-apps/hobby-log/deploy.yaml -p '{"spec":{"template":{"spec":{"containers":[{"name":"hobby-log","image":"${{ env.DOCKER_TAG }}"}]}}}}' -o yaml > new_deploy.yaml
           mv new_deploy.yaml apps/user-apps/hobby-log/deploy.yaml
           git add apps/user-apps/hobby-log/deploy.yaml
