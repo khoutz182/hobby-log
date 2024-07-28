@@ -39,5 +39,6 @@ jobs:
           cd argocd-gitops
           kubectl patch --local -f apps/user-apps/hobby-log/deploy.yaml -p '{"spec":{"template":{"spec":{"containers":[{"name":"hobby-log","image":"${{ env.DOCKER_TAG }}"}]}}}}' -o yaml > new_deploy.yaml
           mv new_deploy.yaml apps/user-apps/hobby-log/deploy.yaml
-          git add apps/user-apps/hobby-log/deploy.yaml -m "Update hobby log to ${{ env.DOCKER_TAG }}"
+          git add apps/user-apps/hobby-log/deploy.yaml
+          git commit -m "Update hobby log to ${{ env.DOCKER_TAG }}"
           git push
