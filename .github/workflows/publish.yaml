@@ -31,7 +31,7 @@ jobs:
           private-key: ${{ secrets.GH_ARGO_GITOPS_PRIVATE_KEY }}
           repositories: "argocd-gitops,hobby-log"
 
-      - name: dispatch workflow
+      - name: Dispatch Workflow
         run: |
           curl -L -X POST \
             -H "Accept: application/vnd.github+json" \

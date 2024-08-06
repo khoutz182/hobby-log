@@ -85,8 +85,15 @@
 							fill="#424242" opacity=".2" />
 					</svg>
 				</a>
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
 			</div>
-			<div class="navbar-menu">
+			<!-- desktop menu -->
+			<div class="navbar-menu is-active">
 				<div class="navbar-start">
 					{% for subsection_path in index.subsections %}
 					{% set subsection = get_section(path=subsection_path) %}
