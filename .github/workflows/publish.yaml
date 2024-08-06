@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-      - fuknaround
+
 jobs:
   build-docker:
     runs-on: ubuntu-latest
