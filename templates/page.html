@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
+<h1 class="title is-1">
 	{{ page.title }}
 </h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
+<p class="subtitle is-6"><strong>{{ page.date }}</strong></p>
 
 {{ page.content | safe }}
 

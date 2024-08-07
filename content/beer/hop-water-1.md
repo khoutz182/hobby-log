@@ -6,7 +6,6 @@ Insiration: [Laguanitas Hoppy Refresher](https://lagunitas.com/beer/hoppy-refres
 
 [Recipe Source](https://www.morebeer.com/articles/Hop_Water)
 
----
 | Ingredient  | Amount |
 |-------------|--------|
 | hops        | 4-5 oz |
@@ -27,6 +26,8 @@ Insiration: [Laguanitas Hoppy Refresher](https://lagunitas.com/beer/hoppy-refres
 9. Cold crash for a day or two
 10. Transfer to keg
 11. Carbonate and serve
+
+---
 
 # Notes
 
