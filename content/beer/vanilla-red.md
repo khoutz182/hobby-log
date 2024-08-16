@@ -13,6 +13,7 @@ Some modifications to the "Big Basin Amber" in the [How To Brew](https://www.goo
 | pale ale malt | 11 lb  |
 | crystal 40&deg;L malt | 1 lb |
 | crystal 80&deg;L malt | 1 lb |
+| Red X/Crystal 20/CaraRed | 0.5 lb |
 
 ## Hop Schedule
 | Hops | Amount | Boil Time |
@@ -20,6 +21,19 @@ Some modifications to the "Big Basin Amber" in the [How To Brew](https://www.goo
 | Nugget 12% AA | 1 oz | 60 min |
 | Amarillo 9% AA | 0.5 oz | steep 15 min |
 | East Kent Goldings 5% AA | 0.5 oz | steep 15 min |
+
+## Yeast
+California Ale
+
+## Stats
+Pre Boil Gravity: 1.048
+OG: 1.057
+FG: 1.014
+ABV: 5.5%
+SRM: 15.6
+IBU: 46.72
+
+Should i pressure this??? hmmm
 
 # Thoughts
 
