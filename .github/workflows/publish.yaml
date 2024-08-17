@@ -2,12 +2,17 @@ on:
   push:
     branches:
       - main
+      - resume
 
 jobs:
   build-docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v3
+      - run: typst compile misc/resume.typ static/kevin_houtz_resume.pdf
+
       - uses: docker/login-action@v3
         with:
           username: nologin
