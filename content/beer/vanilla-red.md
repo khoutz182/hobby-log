@@ -5,7 +5,8 @@ title = "American Red Ale w/ Vanilla #1"
 First attempt at my own recipe, it's just going to be a modification of an american red ale with vanilla added in the keg.
 - [vanilla in beer](https://learningtohomebrew.com/vanilla-extract-in-beer-homebrew/)
 
-Some modifications to the "Big Basin Amber" in the [How To Brew](https://www.goodreads.com/book/show/35281173-how-to-brew) book:
+Some modifications to the "Big Basin Amber" in the [How To Brew](https://www.goodreads.com/book/show/35281173-how-to-brew) book,
+the goal being to make a [Vanilla Bitch Slap](https://www.beeradvocate.com/beer/profile/29162/129139/).
 
 ## Grain bill
 | Ingredient    | Amount |
@@ -25,7 +26,7 @@ Some modifications to the "Big Basin Amber" in the [How To Brew](https://www.goo
 ## Yeast
 US-05 Safale American Ale Yeast
 
-## Stats
+## Expected Stats
 
 | Stat | Value |
 |------|-------|
@@ -38,9 +39,21 @@ US-05 Safale American Ale Yeast
 
 Ferment under 5-8psi.
 
----
-# Thoughts
+## Measured Values
 
-[Red X Malt](https://bestmalz.de/en/malts/best-red-x/) might be a good addition, reducing the crystals and adding Red X. Also 
-[this](https://www.brewersfriend.com/homebrew/recipe/view/1088126/no-crystal-american-red-recipe-kit-5-gal) recipe calls for
-2 oz of Pale Chocolate malt. hmmmm.
+| Stat | Value |
+|------|-------|
+| OG   | 1.059 |
+| pitching temp | 74&deg; |
+| US-05 | 2 billion cells (2 packets) |
+| fermentor volume | just over 5 gal |
+
+---
+
+## Notes
+
+- half a whirfloc tablet added at end of boil
+- whirlpooled while cooling
+- steam condenser is a good addition, have to find the right heater power % though. A lot more boiled away than i anticipated
+  - or i could sparge, maybe half a gallon?
+- cooling continues to be a pain under 100&deg;F. Racked to fermentor and chilled in freezer for 2 hours before pitching yeast
