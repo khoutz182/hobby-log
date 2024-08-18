@@ -1,5 +1,5 @@
 +++
-title = "Vanilla Bitch Slap #1"
+title = "American Red Ale w/ Vanilla #1"
 +++
 
 First attempt at my own recipe, it's just going to be a modification of an american red ale with vanilla added in the keg.
