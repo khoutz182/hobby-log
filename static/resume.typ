@@ -72,7 +72,7 @@
   position: "Senior Software Developer",
 )
 
-Provides digital media services for libraries.
+Provides digital media services for libraries through the Hoopla mobile app.
 
 #resume-entry(
   title: "Unifyd",
@@ -80,7 +80,7 @@ Provides digital media services for libraries.
   position: "Senior Software Developer",
 )
 
-Data Processing company, able to match messy data using a combination of manual
+Data processing company, able to match messy data using a combination of manual
 training and machine learning, which allows customers to gain marketing
 insights.
 
@@ -132,7 +132,7 @@ message queues.
 
 #resume-item[
   - Worked on the activations team writing and maintaining Java applications,
-    increasing reliability, maintainability, and visibility in to the pipeline
+    increasing reliability, maintainability, and visibility into the pipeline
   - Reduced processing time from hours to 15 minutes for batch jobs by converting a
     web application to run in a container and orchestrated by AWS Batch
   - Technologies used: Java, Kotlin, Terraform, Docker, AWS Batch, Step Functions,

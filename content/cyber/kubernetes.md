@@ -21,3 +21,8 @@ Until I put together a diagram for that, this is the rough flow:
 - style the site better
   - the hamberder menu on mobile is trash
 
+{% mermaid() %}
+graph TD
+    A[Enter Chart Def] --> B(Preview)
+    b --> C{decide}
+{% end %}

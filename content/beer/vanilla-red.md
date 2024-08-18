@@ -13,28 +13,32 @@ Some modifications to the "Big Basin Amber" in the [How To Brew](https://www.goo
 | pale ale malt | 11 lb  |
 | crystal 40&deg;L malt | 1 lb |
 | crystal 80&deg;L malt | 1 lb |
-| Red X/Crystal 20/CaraRed | 0.5 lb |
+| Red Caramel Caravienna | 0.5 lb |
 
 ## Hop Schedule
 | Hops | Amount | Boil Time |
 |------|--------|-----------|
 | Nugget 12% AA | 1 oz | 60 min |
 | Amarillo 9% AA | 0.5 oz | steep 15 min |
-| East Kent Goldings 5% AA | 0.5 oz | steep 15 min |
+| Cascade 5% AA | 0.5 oz | steep 15 min |
 
 ## Yeast
-California Ale
+US-05 Safale American Ale Yeast
 
 ## Stats
-Pre Boil Gravity: 1.048
-OG: 1.057
-FG: 1.014
-ABV: 5.5%
-SRM: 15.6
-IBU: 46.72
 
-Should i pressure this??? hmmm
+| Stat | Value |
+|------|-------|
+| Pre-Boil Gravity | 1.048 |
+| OG | 1.057 |
+| FG | 1.014 |
+| ABV | 5.5% |
+| SRM | 15.6 |
+| IBU | 46.72 |
 
+Ferment under 5-8psi.
+
+---
 # Thoughts
 
 [Red X Malt](https://bestmalz.de/en/malts/best-red-x/) might be a good addition, reducing the crystals and adding Red X. Also 
