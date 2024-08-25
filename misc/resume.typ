@@ -1,8 +1,41 @@
-// https://www.apollographql.com/careers/8ab8d005-e2cd-4148-a8b3-64de9b57c3ad
-// https://job-boards.greenhouse.io/growtherapy/jobs/4449376005
-
 #import "@preview/fontawesome:0.2.0"
 #import "@preview/modern-cv:0.5.0": *
+
+#let __header_align_3(left_body, mid_body, right_body) = {
+  block[
+    #box[
+      #align(left)[
+        #left_body
+      ]
+    ]
+    #box[
+      #align(left)[
+        #set text(size: 9pt, weight: "light")
+        #mid_body
+      ]
+    ]
+    #box(width: 1fr)[
+      #align(right)[
+        #right_body
+      ]
+    ]
+  ]
+}
+/// Justified header that takes a primary section and a secondary section. The primary section is on the left and the secondary section is on the right.
+/// - primary (content): The primary section of the header
+/// - secondary (content): The secondary section of the header
+#let justified-header(primary, middle, right) = {
+  set block(above: 0.7em, below: 0.7em)
+  pad[
+    #__header_align_3[
+      == #primary
+    ][
+      #middle
+    ][
+      #tertiary-right-header[#right]
+    ]
+  ]
+}
 
 /// The base item for resume entries. This formats the item for the resume entries. Typically your body would be a bullet list of items. Could be your responsibilities at a company or your academic achievements in an educational background section.
 /// - title (string): The title of the resume entry
@@ -26,22 +59,24 @@
     title-content = link(title-link)[#title]
   } else {
     title-content = title
+    if type(title) == "string" and title.len() > 0 {
+      title-content += [ -- ]
+    } else {}
   }
 
   pad[
-    #justified-header(title-content, location)
-    #secondary-justified-header(" - " + position, date)
+    #justified-header(title-content, position, date)
   ]
 }
 
 #let resume-item(body) = {
-  set text(size: 10pt, style: "normal", weight: "light", fill: color-darknight)
+  set text(size: 11pt, style: "normal", weight: "light", fill: color-darknight)
   pad(left: 10pt, body)
 }
 
 #show: resume.with(author: (
-  firstname: "",
-  lastname: "Kevin Houtz",
+  firstname: "Kevin",
+  lastname: "Houtz",
   address: none,
   email: "khoutz182@pm.me",
   phone: "765-491-5128",
@@ -72,7 +107,14 @@
   position: "Senior Software Developer",
 )
 
-Provides digital media services for libraries through the Hoopla mobile app.
+Provides digital media services for libraries, allowing patrons to checkout
+electronic content with their library card.
+
+#resume-item[
+  - Implemented a new rating system, allowing libraries to restrict content that may
+    be inappropriate.
+  - Migrated a suite of backend rest services from Java 1.8 to Java 11
+]
 
 #resume-entry(
   title: "Unifyd",
