@@ -12,6 +12,18 @@ Until I put together a diagram for that, this is the rough flow:
 4. the configured workflow in the gitops repository updates the appropriate deployment definition version and pushes the changes back up to the `main` branch
 5. [ArgoCD](https://argo-cd.readthedocs.io/en/stable/) picks up the change and deploys the new version of the application
 
+{% mermaid() %}
+sequenceDiagram
+    actor Author
+    Author ->> Github: git push
+    Github ->> Actions: build docker image
+    Actions ->> Container Registry: docker push
+    Actions ->> Gitops Repository: workflow dispatch
+    Kubernetes ->> Gitops Repository: ArgoCD Sync
+    Kubernetes ->> Container Registry: docker pull
+    Kubernetes ->> ArgoCD Application: Update deployment
+{% end %}
+
 # Notes
 - Authentication is never done with personal access tokens. Those are fine for individuals, but for processes that should be supported long term, using a
   [github app](https://docs.github.com/en/apps) seems like a better idea, plus the same setup can be done in orgs and on enterprise setups.
@@ -21,8 +33,3 @@ Until I put together a diagram for that, this is the rough flow:
 - style the site better
   - the hamberder menu on mobile is trash
 
-{% mermaid() %}
-graph TD
-    A[Enter Chart Def] --> B(Preview)
-    b --> C{decide}
-{% end %}

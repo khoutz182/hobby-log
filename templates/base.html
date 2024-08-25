@@ -54,15 +54,18 @@
 					</div>
 					{% endfor %}
 				</div>
-				{% if index.pages %}
 				<div class="navbar-end">
+					{% if index.pages %}
 					{% for page in index.pages %}
 					<a class="navbar-item" href="{{ page.permalink | safe }}">
 						{{ page.title }}
 					</a>
 					{% endfor %}
+					{% endif %}
+					<a class="navbar-item" href="/kevin_houtz_resume.pdf">
+						Resume
+					</a>
 				</div>
-				{% endif %}
 			</div>
 		</nav>
 	</header>
@@ -71,8 +74,9 @@
 			{% block content %} {% endblock %}
 		</div>
 	</div>
-	<script src="/mermaid.min.js">
-		mermaid.initialize({startOnLoad: true});
+	<script type="module">
+		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+		mermaid.initialize({startOnLoad: true, theme: 'dark'});
 	</script>
 </body>
 
