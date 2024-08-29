@@ -112,7 +112,7 @@ electronic content with their library card.
 
 #resume-item[
   - Implemented a new rating system, allowing libraries to restrict content that may
-    be inappropriate.
+    be inappropriate to certain audiences.
   - Migrated a suite of backend rest services from Java 1.8 to Java 11
 ]
 
