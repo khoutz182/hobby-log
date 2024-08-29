@@ -15,6 +15,7 @@ the goal being to make a [Vanilla Bitch Slap](https://www.beeradvocate.com/beer/
 | crystal 40&deg;L malt | 1 lb |
 | crystal 80&deg;L malt | 1 lb |
 | Red Caramel Caravienna | 0.5 lb |
+| Vanilla Extract | 10tsp added prior to kegging |
 
 ## Hop Schedule
 | Hops | Amount | Boil Time |
@@ -51,7 +52,6 @@ Ferment under 5-8psi.
 ---
 
 ## Notes
-
 - half a whirfloc tablet added at end of boil
 - whirlpooled while cooling
 - steam condenser is a good addition, have to find the right heater power % though. A lot more boiled away than i anticipated
