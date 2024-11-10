@@ -1,5 +1,6 @@
 +++
 title = "Lets Get Digital"
+weight = 0
 +++
 
 Historically I've run arch as my main driver, however recently I've been getting into [NixOS](https://nixos.org/).

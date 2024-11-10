@@ -1,5 +1,4 @@
-#import "@preview/fontawesome:0.2.0"
-#import "@preview/modern-cv:0.5.0": *
+#import "requirements.typ": *
 
 #let __header_align_3(left_body, mid_body, right_body) = {
   block[

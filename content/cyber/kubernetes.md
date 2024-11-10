@@ -2,7 +2,7 @@
 title = "Kubernetes"
 +++
 
-Hosted by scaleway, argocd manages the kubernetes cluster usint gitops.
+Hosted by scaleway, argocd manages the kubernetes cluster using gitops.
 
 Until I put together a diagram for that, this is the rough flow:
 

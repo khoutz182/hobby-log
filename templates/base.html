@@ -41,8 +41,18 @@
 							{{ subsection.title }}
 						</a>
 
-						{% if subsection.pages %}
+						{% if subsection.pages or subsection.subsections %}
 						<div class="navbar-dropdown">
+							{% for group in subsection.subsections %}
+							hello
+							{% if group.pages %}
+							{% for page in group.pages %}
+							<a class="navbar-item" href="{{ page.permalink | safe }}">
+								{{ page.title }}
+							</a>
+							{% endfor %}
+							{% endif %}
+							{% endfor %}
 							<!-- loop through posts -->
 							{% for page in subsection.pages %}
 							<a class="navbar-item" href="{{ page.permalink | safe }}">
@@ -78,6 +88,9 @@
 		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
 		mermaid.initialize({startOnLoad: true, theme: 'dark'});
 	</script>
+	<!-- <div class="container" style="margin-top: 60px;"> -->
+	<!-- 	{{ __tera_context }} -->
+	<!-- </div> -->
 </body>
 
 </html>
