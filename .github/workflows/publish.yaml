@@ -9,8 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: FortAwesome/Font-Awesome@6.6.0
+
       - uses: typst-community/setup-typst@v3
       - run: typst compile misc/resume.typ static/kevin_houtz_resume.pdf
+        with:
+          cache-dependency-path: misc/requirements.typ
 
       - uses: docker/login-action@v3
         with:
