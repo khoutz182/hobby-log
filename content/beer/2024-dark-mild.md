@@ -3,7 +3,6 @@ title = "English Dark Mild"
 date = 2024-12-06
 +++
 
-
 ## Grain bill
 | Ingredient    | Amount |
 |---------------|--------|
@@ -32,4 +31,12 @@ SafAle S-04
 | Stat | Value      |
 |------|------------|
 | OG   | 1.035      |
+| FG   | 1.013      |
 | Pitching temp | 62&deg; F |
+
+## Assesment
+- hollow
+- empty
+- sad
+
+The body comes no where close to how it presents itself, big swing and a miss.
