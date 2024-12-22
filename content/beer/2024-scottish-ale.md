@@ -3,6 +3,9 @@ title = "Scottish Ale"
 date = 2024-12-20
 +++
 
+## Inspiration
+combo of the "How to Brew" scottish ale recipe and [this](https://homebrewacademy.com/epic-scottish-ale-recipe/).
+
 ## Grain bill
 | Ingredient           | Amount  |
 |----------------------|---------|
