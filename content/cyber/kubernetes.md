@@ -33,3 +33,4 @@ sequenceDiagram
 - style the site better
   - the hamberder menu on mobile is trash
 
+hiya bacon
