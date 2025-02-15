@@ -61,7 +61,7 @@
     title-content = title
     if type(title) == "string" and title.len() > 0 {
       title-content += [ -- ]
-    } else {}
+    } else { }
   }
 
   pad[
@@ -74,30 +74,38 @@
   pad(left: 10pt, body)
 }
 
-#show: resume.with(author: (
-  firstname: "Kevin",
-  lastname: "Houtz",
-  address: none,
-  email: "khoutz182@pm.me",
-  phone: "765-491-5128",
-  github: "khoutz182",
-  linkedin: "kevin-houtz",
-  positions: (none, "Senior Software Developer", none),
-), colored-headers: false, accent-color: rgb("#000000"), date: none)
+#show: resume.with(
+  author: (
+    firstname: "Kevin",
+    lastname: "Houtz",
+    address: none,
+    email: "kevin@houtz.dev",
+    phone: "765-491-5128",
+    github: "khoutz182",
+    linkedin: "kevin-houtz",
+    positions: (none, "Senior Software Developer", none),
+  ),
+  colored-headers: false,
+  accent-color: rgb("#000000"),
+  date: none,
+)
 
 = Core Skills
 
 #resume-skill-item("Languages", ("Kotlin", "Java", "Groovy"))
 #resume-skill-item("Frameworks", ("Spring Boot", "Guice", "Grails", "Ktor"))
-#resume-skill-item("Technologies", (
-  "Docker",
-  "PostgreSQL",
-  "Terraform",
-  "Kubernetes",
-  "ArgoCD",
-  "Elasticsearch",
-  "AWS",
-))
+#resume-skill-item(
+  "Technologies",
+  (
+    "Docker",
+    "PostgreSQL",
+    "Terraform",
+    "Kubernetes",
+    "ArgoCD",
+    "Elasticsearch",
+    "AWS",
+  ),
+)
 
 = Experience
 
@@ -183,7 +191,7 @@ message queues.
 
 #resume-entry(
   title: "Clarity Partners LLC",
-  date: "January 2015 - September 2018",
+  date: "January 2014 - September 2018",
   position: "Senior Software Consultant",
 )
 
