@@ -13,6 +13,10 @@
     #skill-group("Languages")[
       - Kotlin
       - Java
+      - Groovy
+      - Scala
+      - Python
+      - C\#
     ]
 
     #skill-group("Frameworks")[
@@ -28,7 +32,17 @@
       - Kubernetes
       - ArgoCD
       - Elasticsearch
-      - AWS
+      - AWS Batch
+      - AWS Lambda
+      - Step Functions
+    ]
+    #hidden-skills()[
+      - jenkins
+      - django
+      - ruby
+      - node
+      - kinesis
+      - kafka
     ]
   ],
 )
@@ -38,7 +52,8 @@
   title: "Senior Software Developer",
   timeline: "February 2023 - Present",
 )[
-  - Migrated a suite of backend Guice+RESTEasy applications from Java 1.8 to Java 21 and Spring Boot
+  - Migrated a suite of backend Guice+RESTEasy applications from Java 8 to Java 21 and Spring Boot with Continuous Integration using Github Actions
+  - Built a container pipeline to Continuously Deploy to ECS
   - Implemented a new rating system, allowing libraries to restrict content that may be inappropriate to certain audiences
 ]
 
@@ -49,7 +64,8 @@
 )[
   - Introduced an automated test suite which increased coverage from 0% to 65% to safely pay back tech debt
   - Built a kubernetes cluster to host environments for each Github pull request for manual testing and QA
-  - Technologies used: Kubernetes, Docker, Java, Kotlin, Elasticsearch, PostgreSQL, ArgoCD, AWS
+  - Refactored the deployment strategy from a branch per customer, to using feature flags and a configuration management system
+  // - Technologies used: Kubernetes, Docker, Java, Kotlin, Elasticsearch, PostgreSQL, ArgoCD, AWS
 ]
 
 #resume-entry(
@@ -58,7 +74,7 @@
   timeline: "February 2021 - January 2022",
 )[
   - Technical lead of the payments team: mentor, scope requirements, work with other teams, and planned sprints in order to launch payment processors for the whitelabel platform
-  - Added 3 currencies and 2 payment processor available to the payment page, allowing more transactions in more regions
+  - Added 3 currencies and 2 payment processor available to the payment page, enabling transactions in more regions
 ]
 
 #resume-entry(
@@ -67,8 +83,7 @@
 )[
   - Joined users from 4 different application databases to be used from a single, unified datastore
   - Migrated customer PII to an encrypted datastore with no interruptions to application uptime
-  - Launched new partners on the whitelabel platform as part of the launch team
-  - Technologies used: Groovy, Grails, Java, Kotlin, MySQL, Terraform, AWS
+  // - Technologies used: Groovy, Grails, Java, Kotlin, MySQL, Terraform, AWS
 ]
 
 #resume-entry(
@@ -76,9 +91,9 @@
   title: "Software Developer",
   timeline: "September 2018 - August 2019",
 )[
-  - Worked on the activations team writing and maintaining Java applications, increasing reliability, maintainability, and visibility into the pipeline
   - Reduced processing time from hours to 15 minutes for batch jobs by converting a web application to run in a container and orchestrated by AWS Batch
-  - Technologies used: Java, Kotlin, Terraform, Docker, AWS Batch, Step Functions, Lambda
+  - Worked on the activations team writing and maintaining Java applications, increasing reliability, maintainability, and visibility into the pipeline
+  // - Technologies used: Java, Kotlin, Terraform, Docker, AWS Batch, Step Functions, Lambda
 ]
 
 #resume-entry(
@@ -86,7 +101,6 @@
   title: "Senior Software Consultant",
   timeline: "January 2014 - September 2018",
 )[
-  - Used the city’s GIS tools to write an application to detect over-saturation of moratoriums issued for a given geographic space, in order to prevent companies from doing too much work in “easy” areas and leaving other areas unmaintained
+  - Wrote a tool using GIS to enforce licensing of an even spread of moratoriums
   - Transitioned the Chicago vehicle registration program from summer sales only, to year round sales
-  - Wrote a Java web application to allow users to purchase vehicle registration stickers issued by Chicago
 ]

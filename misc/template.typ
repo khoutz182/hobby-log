@@ -77,9 +77,17 @@
 ) = {
   set list(marker: none, body-indent: 0em)
   [
-    #block(below: 1em, above: 2em)[#upper[#name]]
+    #block(below: 1em, above: 2em)[
+      #text(weight: "medium")[
+        #upper[#name]
+      ]
+    ]
     #content
   ]
+}
+
+#let hidden-skills(content) = {
+  text(size: 1pt, fill: white)[#content]
 }
 
 #let entry-header(company, title, timeline) = {
