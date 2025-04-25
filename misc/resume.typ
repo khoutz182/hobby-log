@@ -73,8 +73,8 @@
   title: "Senior Software Developer",
   timeline: "February 2021 - January 2022",
 )[
-  - Technical lead of the payments team: mentor, scope requirements, work with other teams, and planned sprints in order to launch payment processors for the whitelabel platform
-  - Added 3 currencies and 2 payment processor available to the payment page, enabling transactions in more regions
+  - Technical lead of the payments team: mentor, scope requirements, work with other teams, and plan sprints to launch payment processors for the whitelabel platform
+  - Added 3 currencies and 2 payment processor to the payment page, enabling transactions in more regions
 ]
 
 #resume-entry(
@@ -101,6 +101,6 @@
   title: "Senior Software Consultant",
   timeline: "January 2014 - September 2018",
 )[
-  - Wrote a tool using GIS to enforce licensing of an even spread of moratoriums
+  - Wrote a tool using GIS to enforce licensing of an even distribution of moratoriums
   - Transitioned the Chicago vehicle registration program from summer sales only, to year round sales
 ]
