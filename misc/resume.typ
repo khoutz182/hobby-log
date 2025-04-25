@@ -62,9 +62,9 @@
   title: "Senior Software Developer",
   timeline: "February 2022 - January 2023",
 )[
-  - Introduced an automated test suite which increased coverage from 0% to 65% to safely pay back tech debt
   - Built a kubernetes cluster to host environments for each Github pull request for manual testing and QA
-  - Refactored the deployment strategy from a branch per customer, to using feature flags and a configuration management system
+  - Introduced an automated test suite which increased coverage from 0% to 65% to safely pay back tech debt
+  - Refactored the deployment strategy from customer specific branches, to using feature flags and a configuration management system
   // - Technologies used: Kubernetes, Docker, Java, Kotlin, Elasticsearch, PostgreSQL, ArgoCD, AWS
 ]
 

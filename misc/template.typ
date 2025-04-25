@@ -15,11 +15,11 @@
 ) = {
   set page(
     paper: "us-letter",
-    margin: 0.8in,
+    margin: 0.7in,
   )
   set text(
     font: ("Inter 18pt", "Source Sans 3"),
-    size: 10pt,
+    size: 10.5pt,
     fill: rgb("#333333"),
   )
   grid(
