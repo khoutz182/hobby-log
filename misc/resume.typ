@@ -99,7 +99,7 @@
 #resume-entry(
   company: "Clarity Partners LLC",
   title: "Senior Software Consultant",
-  timeline: "January 2014 - September 2018",
+  timeline: "January 2013 - September 2018",
 )[
   - Wrote a tool using GIS to enforce licensing of an even distribution of moratoriums
   - Transitioned the Chicago vehicle registration program from summer sales only, to year round sales
