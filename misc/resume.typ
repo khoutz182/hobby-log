@@ -34,16 +34,19 @@
       - Elasticsearch
       - AWS Batch
       - AWS Lambda
+      - DynamoDB
+      - Aerospike
+      - Kafka
       - Step Functions
     ]
-    #hidden-skills()[
-      - jenkins
-      - django
-      - ruby
-      - node
-      - kinesis
-      - kafka
-    ]
+    // #hidden-skills()[
+    //   - jenkins
+    //   - django
+    //   - ruby
+    //   - node
+    //   - kinesis
+    //   - kafka
+    // ]
   ],
 )
 
