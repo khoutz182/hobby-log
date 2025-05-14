@@ -2,7 +2,7 @@
 
 #show: resume.with(
   name: "Kevin Houtz",
-  title: "Senior Software Developer",
+  title: "Senior Software Engineer",
   contact: (
     email: "kevin@houtz.dev",
     github: "khoutz182",
@@ -49,7 +49,7 @@
 
 #resume-entry(
   company: "Midwest Tape, LLC",
-  title: "Senior Software Developer",
+  title: "Senior Software Engineer",
   timeline: "February 2023 - Present",
 )[
   - Migrated a suite of backend Guice+RESTEasy applications from Java 8 to Java 21 and Spring Boot with Continuous Integration using Github Actions
@@ -59,7 +59,7 @@
 
 #resume-entry(
   company: "Unifyd",
-  title: "Senior Software Developer",
+  title: "Senior Software Engineer",
   timeline: "February 2022 - January 2023",
 )[
   - Built a kubernetes cluster to host environments for each Github pull request for manual testing and QA
@@ -70,7 +70,7 @@
 
 #resume-entry(
   company: "Rocketmiles",
-  title: "Senior Software Developer",
+  title: "Senior Software Engineer",
   timeline: "February 2021 - January 2022",
 )[
   - Technical lead of the payments team: mentor, scope requirements, work with other teams, and plan sprints to launch payment processors for the whitelabel platform
@@ -78,7 +78,7 @@
 ]
 
 #resume-entry(
-  title: "Software Developer",
+  title: "Software Engineer",
   timeline: "October 2019 - February 2021",
 )[
   - Joined users from 4 different application databases to be used from a single, unified datastore
@@ -88,7 +88,7 @@
 
 #resume-entry(
   company: "Signal",
-  title: "Software Developer",
+  title: "Software Engineer",
   timeline: "September 2018 - August 2019",
 )[
   - Reduced processing time from hours to 15 minutes for batch jobs by converting a web application to run in a container and orchestrated by AWS Batch
